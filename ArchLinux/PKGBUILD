@@ -19,8 +19,8 @@ sha256sums=('1d03942f105c3a6e0c61721dbdf440b3100c15d22d6b32aaf7b042601424a51b'
 
 
 package() {
-  install -D -m755 ravkav "${pkgdir}/usr/bin/ravkav"
-  install -D -m644 RavKavOnline.desktop "${pkgdir}/usr/share/applications/RavKavOnline.desktop"
+  install -D -m755 ../Common/ravkav "${pkgdir}/usr/bin/ravkav"
+  install -D -m644 ../Common/RavKavOnline.desktop "${pkgdir}/usr/share/applications/RavKavOnline.desktop"
   install -D -m644 "RavKavOnline/RavKavOnline 64.app/Contents/Java/RavKavOnline.jar" "${pkgdir}/usr/share/java/ravkav/RavKavOnline.jar"
 }
 
